@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Profile Share Modal</title>
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="wrapper-card">
+            <div>
+                <img src="./images/1632741855887.jpg" alt="Dipankar">
+            </div>
+            
+            <div class="username">
+                <h2>Dipankar Yadav</h2>
+            </div>
+
+            <div class="designation">
+                <h3>Cse @ IIIT Sonepat</h3>
+            </div>
+
+            <div class="btn-grp">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                
+                <button onclick="openModal2()" class="btn-follow btn-card">Follow me</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Modal Component-->
+    <div class="modal">
+        <div class="modalHeader">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div>
+            <h3>Share This Via </h3>
+            <div class="icon-container">
+                <a href="https://github.com/DIPANKAR-123?tab=repositories" class="icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://twitter.com/DipankarYadav10" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                
+                <a href="https://www.linkedin.com/in/dipankar-yadav-ba6663157/" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="modal2">
+        <div class="modalHeader2">
+            <h1>Let's connect with each other</h1>
+            <div>
+                <i onclick="closeModal2()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div>
+            <h3>Follow me on </h3>
+            <div class="icon-container">
+                <a href="https://github.com/DIPANKAR-123?tab=repositories" class="icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://twitter.com/DipankarYadav10" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                
+                <a href="https://www.linkedin.com/in/dipankar-yadav-ba6663157/" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay2" onclick="closeModal2()"></div>
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
